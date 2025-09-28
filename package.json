@@ -2,11 +2,15 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mcstdtkslsd.github.io/Alex/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "lint": "next lint",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@types/node": "20.12.7",
@@ -36,6 +40,7 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "gh-pages": "^6.3.0"
   }
 }

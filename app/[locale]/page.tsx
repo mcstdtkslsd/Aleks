@@ -21,3 +21,11 @@ export default function Home() {
     </main>
   )
 }
+
+// export async function generateStaticParams() {
+//   // 这里返回你项目中实际支持的语言，比如只支持中文
+//   return [{ locale: 'zh' }];
+  
+//   // 如果支持多种语言，比如中英文，这样写：
+//   // return [{ locale: 'zh' }, { locale: 'en' }];
+// }

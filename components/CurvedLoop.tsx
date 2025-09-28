@@ -6,7 +6,6 @@ interface CurvedLoopProps {
   marqueeText: string;
   speed?: number;
   curveAmount?: number;
-  direction?: 'left' | 'right';
   interactive?: boolean;
 }
 
@@ -14,7 +13,6 @@ const CurvedLoop = ({
   marqueeText,
   speed = 2,
   curveAmount = 400,
-  direction = 'left',
   interactive = true,
 }: CurvedLoopProps) => {
   const measureRef = useRef<SVGTextElement>(null);
@@ -25,6 +23,7 @@ const CurvedLoop = ({
   const [dragging, setDragging] = useState(false);
   const [lastX, setLastX] = useState(0);
   const [vel, setVel] = useState(0);
+  const [direction, setDirection] = useState<'left' | 'right'>('left'); // ✅ 新增 state
 
   const pathD = `M-100,40 Q500,${40 + curveAmount} 1540,40`;
 
@@ -91,7 +90,7 @@ const CurvedLoop = ({
   const handlePointerUp = () => {
     if (!interactive) return;
     setDragging(false);
-    setDirection(vel > 0 ? 'right' : 'left');
+    setDirection(vel > 0 ? 'right' : 'left'); // ✅ 使用内部 state
   };
 
   return (

@@ -13,7 +13,6 @@ export const localePrefix = 'as-needed';
 export const { Link, redirect, usePathname, useRouter } =
   createLocalizedPathnamesNavigation({
     locales,
-    defaultLocale: 'zh',
     pathnames,
     localePrefix
   });
