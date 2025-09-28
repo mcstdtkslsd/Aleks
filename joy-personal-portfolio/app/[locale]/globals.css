@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark {
+  background-color: #000000;
+}
+
+html.light {
+  background-color: #000000;
+}
+
+.aurora-container {
+  z-index: 0; /* 确保极光效果在黑色背景之上 */
+}
+
+body {
+  background-color: #000000;
+  position: relative; /* 确保 body 作为定位上下文 */
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 确保整个视口高度 */
+  z-index: 1; /* 确保主要内容在极光效果之上 */
+}
