@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import knowledgeSharingPlatformImage from '@/public/运河行迹.jpg';
 import breadditImage from "@/public/breaddit.png";
 import gameHubImage from "@/public/game-hub.png";
-import typingSpeedImage from "@/public/loci VR.jpg";
+import typingSpeedImage from "@/public/loci-vr.jpg";
 import visualizationImage from "@/public/古物寻迹.jpg";
 
 export const links = [
