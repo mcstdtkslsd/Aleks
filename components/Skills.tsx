@@ -33,11 +33,6 @@ export default function Skills() {
       ref={ref}
       className="max-w-[53rem] scroll-mt-28 text-center mb-40"
     >
-      <SectionHeading>
-        {activeLocale === "zh"
-          ? headerLanguageMap["Skills"]
-          : "My Skills"}
-      </SectionHeading>
       <ul className="flex flex-wrap justify-center items-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li

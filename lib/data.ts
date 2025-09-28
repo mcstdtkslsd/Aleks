@@ -21,7 +21,6 @@ export const headerLanguageMap = {
     About: '关于我',
     Projects: '我的项目',
     Experiences: '我的经历',
-    Skills: '技能', // ✅ 添加
 }
 
 // Experiences 数据
